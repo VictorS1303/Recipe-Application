@@ -87,3 +87,36 @@
     color: var(--primary-text-color);
     background-color: var(--primary-background-color);
 }
+
+/* Recipe Cards */
+.card.recipe-card
+{
+    display: grid;
+    place-items: center;
+    height: 200px;
+    width: 300px;
+    border: 2px solid #333;
+    border-radius: calc(var(--base-border-radius) / 1.5);
+    overflow: hidden;
+}
+
+.card.recipe-card>*
+{
+    position: absolute;
+}
+
+.card.recipe-card .overlay
+{
+    background-color: var(--card-overlay-background-color);
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+.card.recipe-card img
+{
+    position: relative;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
