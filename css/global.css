@@ -30,3 +30,16 @@ button
 {
     cursor: pointer;
 }
+
+img
+{
+    display: block;
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+}
+
+section
+{
+    overflow: hidden;
+}

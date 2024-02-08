@@ -87,3 +87,5 @@ nav.main-nav ul li a:hover:not(.active)::before
     width: 100%;
     transition: width .2s ease-in;
 }
+
+/* Section: Recipes */
