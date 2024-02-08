@@ -31,16 +31,28 @@ button
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 img,
 video
 {
     display: block;
     width: 100%;
     height: 100vh;
+=======
+img
+{
+    display: block;
+    height: 100vh;
+    width: auto;
+>>>>>>> origin/recipes_list
     object-fit: cover;
 }
 
 section
 {
+<<<<<<< HEAD
     position: relative;
+=======
+    overflow: hidden;
+>>>>>>> origin/recipes_list
 }
