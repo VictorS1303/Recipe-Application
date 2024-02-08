@@ -4,11 +4,71 @@
     --primary-text-color: #fff;
     --primary-background-color: #4169e1;
     --btn-background-color: #4169e1;
-    
+    --overlay-background-color: rgba(0, 0, 0, .2);
+    --btn-hover-overlay-background-color: rgba(0, 0, 0, .4);
+
     /* Radii */
     --base-border-radius: 10px;
 
     /* Shadows */
     --text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     --box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--btn-hover-overlay-background-color);
+}
+
+/* Buttons */
+.btn
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: calc(var(--base-border-radius) / 1.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.btn .btn-hover-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--overlay-background-color);
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    transform: translateX(-100%);
+    transition: transform .35s ease-in;
+}
+
+.btn:hover .btn-hover-overlay
+{
+    transform: translateX(0);
+    transition: transform .35s ease-in;
+}
+
+.btn span.btn-text
+{
+    position: relative;
+    z-index: 100;
+}
+
+.btn:active
+{
+    transform: scale(.98);
+}
+
+.primary-btn
+{
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
 }
