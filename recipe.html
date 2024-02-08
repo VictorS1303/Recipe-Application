@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/responsiveness.css">
     <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script>
     <script src="js/main.js" defer></script>
     <script src="js/chosen_recipe.js" defer></script>
@@ -15,7 +16,27 @@
 </head>
 
 <body>
+    <i class="fas fa-bars btn close-btn nav-toggle-btn" id="nav_toggle_btn"></i>
 
+    <nav class="main-nav" id="main_nav">
+        <a href="index.html">
+            <h1 class="logo">
+                <i class="fa-solid fa-utensils"></i> Meal4U
+            </h1>
+        </a>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="recipes_list.html">Recipes</a>
+            </li>
+
+            <li>
+                <a href="#" class="active">Recipe</a>
+            </li>
+        </ul>
+    </nav>
 </body>
 
 </html>

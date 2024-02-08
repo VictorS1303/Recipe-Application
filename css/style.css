@@ -1,0 +1,89 @@
+i.fas.fa-bars
+{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--btn-background-color);
+    transition: right .3s ease-in;
+}
+
+i.fas.fa-bars.active
+{
+    right: 230px;
+    transition: right .3s ease-in;
+}
+
+nav.main-nav
+{
+    position: absolute;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    background-color: var(--primary-background-color);
+    height: 100%;
+    box-shadow: var(--box-shadow);
+    transition: right .3s ease-in;
+}
+
+nav.main-nav.active
+{
+    right: 0;
+    transition: right .3s ease-in;
+}
+
+nav.main-nav h1.logo
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--primary-text-color);
+}
+
+nav.main-nav ul
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+nav.main-nav ul li
+{
+    font-size: 1.7rem;
+}
+
+nav.main-nav ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+
+nav.main-nav ul li a
+{
+    position: relative;
+    color: var(--primary-text-color);
+}
+
+nav.main-nav ul li a.active
+{
+    border-bottom: 2px solid var(--primary-text-color);
+}
+
+nav.main-nav ul li a::before
+{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    border-bottom: 2px solid var(--primary-text-color);
+    transition: width .2s ease-in;
+}
+
+nav.main-nav ul li a:hover:not(.active)::before
+{
+    width: 100%;
+    transition: width .2s ease-in;
+}
